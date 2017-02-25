@@ -57,10 +57,30 @@
 *这是斜体*
 
 
-## 代码框
+## 行内代码框
 ` console.log(11);
 function(){}
 `
 
 ## 分隔线
 ***
+
+## 块代码框
+```
+self.app.use(function (req, res, next) {
+           if (self.filterFuncs.length) {
+               Async.eachSeries(self.filterFuncs, function (func, callback) {
+                   func(req, res, function (err) {
+                       callback(err);
+                   });
+               }, function (err, resp) {
+                   next(err);
+               });
+           } else {
+               next();
+           }
+       });
+       self.loadRoutes(self.routePath);
+```
+
+    
