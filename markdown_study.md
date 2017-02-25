@@ -1,4 +1,6 @@
 # Markdown--从入门到精通
+[TOC]
+
 #### 导语
 > [Markdown](http://zh:wikipedia.org/wiki/Markdown)是一种轻量级的标记语言
 
@@ -58,7 +60,8 @@
 
 
 ## 行内代码框
-` console.log(11);
+`
+console.log(11);
 function(){}
 `
 
@@ -66,7 +69,7 @@ function(){}
 ***
 
 ## 块代码框
-```
+``` javascript
 self.app.use(function (req, res, next) {
            if (self.filterFuncs.length) {
                Async.eachSeries(self.filterFuncs, function (func, callback) {
@@ -82,5 +85,3 @@ self.app.use(function (req, res, next) {
        });
        self.loadRoutes(self.routePath);
 ```
-
-    
